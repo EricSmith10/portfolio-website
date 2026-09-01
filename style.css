@@ -82,6 +82,7 @@ a { color: inherit; }
   flex-direction: column;
   gap: 28px;
   writing-mode: vertical-rl;
+  text-orientation: sideways;
   transform: rotate(180deg);
 }
 
@@ -105,7 +106,6 @@ a { color: inherit; }
   height: 5px;
   border-radius: 50%;
   background: var(--text-muted);
-  text-orientation: sideways;
   flex-shrink: 0;
 }
 .rail-nav a:hover .dot,
@@ -241,7 +241,10 @@ main {
 }
 
 @keyframes draw {
-  to { stroke-dashoffset: 0; }
+  0% { stroke-dashoffset: 2000; }
+  55% { stroke-dashoffset: 0; }
+  85% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 2000; }
 }
 
 /* ---------- Timeline ---------- */
