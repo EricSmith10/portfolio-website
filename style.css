@@ -105,6 +105,7 @@ a { color: inherit; }
   height: 5px;
   border-radius: 50%;
   background: var(--text-muted);
+  text-orientation: sideways;
   flex-shrink: 0;
 }
 .rail-nav a:hover .dot,
@@ -236,7 +237,7 @@ main {
   stroke-linejoin: round;
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
-  animation: draw 2.4s ease-out forwards 0.3s;
+  animation: draw 4s ease-out infinite;
 }
 
 @keyframes draw {
